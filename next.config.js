@@ -13,6 +13,16 @@ module.exports = {
   //   ],
   // },
 
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/cb-21',
+        permanent: false,
+      },
+    ];
+  },
+
   // SVGR
   webpack(config) {
     config.module.rules.push({
