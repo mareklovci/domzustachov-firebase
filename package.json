@@ -2,6 +2,7 @@
   "name": "domzustachov",
   "version": "0.1.0",
   "private": true,
+  "main": "functions/index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,14 +16,22 @@
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy:full": "firebase deploy --only hosting,functions",
+    "deploy:functions": "firebase deploy --only functions",
+    "serve": "yarn run build && firebase emulators:start --only hosting,functions",
+    "shell": "yarn run build && firebase functions:shell"
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "domzustachov": "file:",
+    "firebase-admin": "^11.0.1",
+    "firebase-functions": "^3.22.0",
     "next": "^12.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-scripts": "^5.0.1",
     "tailwind-merge": "^1.5.1"
   },
   "devDependencies": {
