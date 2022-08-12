@@ -4985,7 +4985,7 @@ domutils@^2.5.2, domutils@^2.8.0:
   version "0.1.0"
   dependencies:
     clsx "^1.2.1"
-    domzustachov "file:../../../AppData/Local/Yarn/Cache/v6/npm-domzustachov-0.1.0-64120b56-627a-4e52-a12f-3e217e90c43f-1660319568960/node_modules/domzustachov"
+    domzustachov "file:../../../AppData/Local/Yarn/Cache/v6/npm-domzustachov-0.1.0-00c6d923-db1c-4d81-bb90-d4c0838cd386-1660331091970/node_modules/domzustachov"
     firebase-admin "^11.0.1"
     firebase-functions "^3.22.0"
     next "^12.2.3"
@@ -6428,11 +6428,6 @@ human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
-
-husky@^7.0.4:
-  version "7.0.4"
-  resolved "https://registry.npmjs.org/husky/-/husky-7.0.4.tgz"
-  integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
 
 iconv-lite@0.4.24:
   version "0.4.24"

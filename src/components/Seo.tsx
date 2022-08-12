@@ -5,7 +5,7 @@ const defaultMeta = {
   title: 'Dechaři.cz',
   siteName: 'Dechaři.cz',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component',
   /** Without additional '/' on the end, e.g. https://google.com */
   url: 'https://dechari.cz',
   type: 'website',
