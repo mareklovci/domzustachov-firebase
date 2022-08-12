@@ -54,16 +54,16 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             variant === 'outline' && [
               'text-primary-500',
               'border border-primary-500',
-              'hover:bg-primary-50 active:bg-primary-100 disabled:bg-primary-100',
+              'active:bg-primary-100 disabled:bg-primary-100 hover:bg-primary-50',
               isDarkBg &&
-                'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
+                'active:bg-gray-800 disabled:bg-gray-800 hover:bg-gray-900',
             ],
             variant === 'ghost' && [
               'text-primary-500',
               'shadow-none',
-              'hover:bg-primary-50 active:bg-primary-100 disabled:bg-primary-100',
+              'active:bg-primary-100 disabled:bg-primary-100 hover:bg-primary-50',
               isDarkBg &&
-                'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
+                'active:bg-gray-800 disabled:bg-gray-800 hover:bg-gray-900',
             ],
             variant === 'light' && [
               'bg-white text-dark ',
@@ -74,13 +74,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             variant === 'dark' && [
               'bg-gray-900 text-white',
               'border border-gray-600',
-              'hover:bg-gray-800 active:bg-gray-700 disabled:bg-gray-700',
+              'active:bg-gray-700 disabled:bg-gray-700 hover:bg-gray-800',
             ],
           ],
           //#endregion  //*======== Variants ===========
           'disabled:cursor-not-allowed',
           isLoading &&
-            'relative text-transparent transition-none hover:text-transparent disabled:cursor-wait',
+            'relative text-transparent transition-none disabled:cursor-wait hover:text-transparent',
           className
         )}
         {...rest}
